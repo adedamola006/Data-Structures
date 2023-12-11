@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-   // Question 2: a program that scans whether a string supplied is a palindrome or not.
+   // a function to perform PUSH operation on dynamically allocated stack containing real numbers
 
    stack <int> push_stack;
    push_stack.push(0);
