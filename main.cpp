@@ -1,20 +1,21 @@
 #include <iostream>
-#include <stack>
+#include <string>
 using namespace std;
 
 int main()
 {
-   // a function to perform PUSH operation on dynamically allocated stack containing real numbers
 
-   stack <int> push_stack;
-   push_stack.push(0);
-   push_stack.push(1);
-   push_stack.push(2);
-   push_stack.push(3);
-   push_stack.push(4);
+    // write a program in C++ that scans a string supplied by a user and determines whether the string is a palindrome or not
+    bool checkPalindrome ( string s ){
 
-   while (!push_stack.empty()) {
-    cout << " " << push_stack.top();
-    push_stack.pop();
-   }
+    int n = s.length();
+
+    for ( int i = 0; i <= n/2; i++ )
+    {
+        if ( s[i] != s[n-1-i] )
+            return false;
+    }
+    return true;
+    }
+
 }
